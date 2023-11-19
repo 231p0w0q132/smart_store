@@ -1,0 +1,119 @@
+.banner {
+  padding-left:10%;
+  padding-right:10%;
+  position: fix;
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+  height:100px;
+  background:#212121;
+}
+.banner_block_1 {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main_icon {
+  justify-content: space-between;
+  display:flex;
+  width:150px;
+  color:white;
+}
+.my_address {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  width:380px;
+  height:60px;
+  color:white;
+}
+.banner_block_2 {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width:300px;
+}
+.menu_coll{
+  color:white;
+  padding:10px;
+}
+.goods_search{
+  
+}
+.main_menu {
+  margin-left:10%;
+  position: relative;
+  width:100%;
+  height:280px;
+  background:white;
+  opacity:1;
+  
+}
+.menu_title{
+  position: absolute;
+  color:black;
+  font-size:30px;
+  top:40%;
+  left:40%;
+  transform:translate(-50%,-50%);
+}
+.main_menu_list{
+  position: absolute;
+  display:flex;
+  top:80%;
+  width:400px;
+  justify-content:space-between;
+  
+}
+.main_menu_list > div{
+  opacity:0.5;
+}
+.main_menu_list > div:hover{
+  opacity:1;
+}
+.slider {
+  position: relative;
+  width:100%;
+  height:450px;
+  border:1px solid red;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: slider 7.5s infinite linear;
+}
+.slide:nth-child(1) {
+  background-image: url("static/ak-47.jpg");
+  animation-delay: 0;
+}
+.slide:nth-child(2) {
+  background-image: url("static/gun2.jpg");
+  animation-delay: -2.5s;
+}
+.slide:nth-child(3) {
+  background-image: url("static/m60.jpeg");
+  animation-delay: -5s;
+}
+@keyframes slider {
+  0% {
+    transform: translateX(0);
+  }
+  26% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-100%);
+    animation-timing-function: step-end;   
+  }
+  93% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
