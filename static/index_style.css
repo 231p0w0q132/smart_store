@@ -88,15 +88,15 @@
   animation: slider 7.5s infinite linear;
 }
 .slide:nth-child(1) {
-  background-image: url("static/ak-47.jpg");
+  background-image: url("ak-47.jpg");
   animation-delay: 0;
 }
 .slide:nth-child(2) {
-  background-image: url("static/gun2.jpg");
+  background-image: url("gun2.jpg");
   animation-delay: -2.5s;
 }
 .slide:nth-child(3) {
-  background-image: url("static/m60.jpeg");
+  background-image: url("m60.jpeg");
   animation-delay: -5s;
 }
 @keyframes slider {
