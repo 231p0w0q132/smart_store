@@ -61,7 +61,7 @@
   position: absolute;
   display:flex;
   top:80%;
-  width:400px;
+  width:450px;
   justify-content:space-between;
   
 }
@@ -75,7 +75,7 @@
   position: relative;
   width:100%;
   height:450px;
-  border:1px solid red;
+  
 }
 .slide {
   position: absolute;
@@ -86,17 +86,19 @@
   background-size: cover;
   background-position: center;
   animation: slider 7.5s infinite linear;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .slide:nth-child(1) {
-  background-image: url("ak-47.jpg");
+  background-image: url("ak-47.jpg"),url("https://image.utoimage.com/preview/cp872722/2022/12/202212008462_500.jpg");
   animation-delay: 0;
 }
 .slide:nth-child(2) {
-  background-image: url("gun2.jpg");
+  background-image: url("gun2.jpg"),url("https://image.utoimage.com/preview/cp872722/2022/12/202212008462_500.jpg");;
   animation-delay: -2.5s;
 }
 .slide:nth-child(3) {
-  background-image: url("m60.jpeg");
+  background-image: url("m60.jpeg"),url("https://image.utoimage.com/preview/cp872722/2022/12/202212008462_500.jpg");;
   animation-delay: -5s;
 }
 @keyframes slider {
