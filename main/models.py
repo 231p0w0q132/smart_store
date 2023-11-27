@@ -1,3 +1,8 @@
 from django.db import models
 
-# Create your models here.
+class items(models.Model):
+    name=models.CharField(max_length=50)
+    content=models.TextField()
+    money=models.CharField(max_length=30)
+    typ=models.CharField(max_length=10)
+    
