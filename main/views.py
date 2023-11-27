@@ -4,4 +4,4 @@ def index(request):
     return render(request,"index.html")
 
 def ranged_weapon(request):
-    return HttpResponse('11')
+    return render(request,"ranged_weapon.html")
