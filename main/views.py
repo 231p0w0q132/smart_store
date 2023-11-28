@@ -24,4 +24,5 @@ def all_weapon(request):
     weapone=items.objects.all()
     context={"items":weapone}
     return render(request,"weapon_list.html",context)
-    
+
+def
