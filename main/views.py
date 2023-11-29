@@ -25,4 +25,4 @@ def all_weapon(request):
     context={"items":weapone}
     return render(request,"weapon_list.html",context)
 
-def
+def 
